@@ -1,4 +1,7 @@
 const socket = io('/')
+
+socket.emit('join-room', ROOM_ID, 10);
+
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
   host: '/',
